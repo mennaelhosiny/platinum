@@ -986,6 +986,9 @@ a.active {
     .swiper-button-next ,.swiper-button-prev{
         display: none !important;
     }
+    video{
+        width: 330px;
+    }
 }
 
 /* footer */
@@ -1039,4 +1042,5 @@ a.active {
     .social-icon {
         font-size: 1.2rem;
     }
+
 }
