@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>بلاتينيوم </title>
+    <link rel="icon" href="images/logobr.webp" type="image/png" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -17,13 +19,13 @@
   <!-- navbar -->
     <header>
         <nav>
-            <div class="logo">Logo</div>
+            <div class="logo"><img src="images/yplatinum.webp" alt="logo"></div>
             <div class="nav-links">
-                <a href="#" class="active">Home</a>
-                <a href="#">About</a>
-                <a href="#">Portfolio</a>
-                <a href="#">Services</a>
-                <a href="#">Contact</a>
+                <a href="#home" class="active">الصفحة الرئيسية</a>
+                <a href="#about">من نحن</a>
+                <a href="#service">خدماتنا</a>
+                <a href="#review">اراء عملائنا</a>
+                <a href="https://wa.me/0582565588">تواصل معنا</a>
             </div>
             <div class="toggle-btn">
                 <span></span>
@@ -33,13 +35,13 @@
         </nav>
     </header>
    <!-- home -->
-    <div class="slider" style="height: 100vh;">
+    <div class="slider" style="height: 100vh;" id="home">
 
 
         <div class="list">
 
             <div class="item">
-                <img src="images/Artboard 1.png" alt="">
+                <img src="images/Artboard-1.webp" alt="">
 
                 <div class="content">
                     <div class="title">MAGIC SLIDER</div>
@@ -48,13 +50,13 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.
                     </div>
                     <div class="button">
-                        <button>SEE MORE</button>
+                        <a href="https://wa.me/0582565588">see more</a>
                     </div>
                 </div>
             </div>
 
             <div class="item">
-                <img src="images/Artboard 3.png" alt="">
+                <img src="images/Artboard 3.webp" alt="">
 
                 <div class="content">
                     <div class="title">MAGIC SLIDER</div>
@@ -69,7 +71,7 @@
             </div>
 
             <div class="item">
-                <img src="images/Artboard 2.png" alt="">
+                <img src="images/Artboard 2.webp" alt="">
 
                 <div class="content">
                     <div class="title">MAGIC SLIDER</div>
@@ -84,7 +86,7 @@
             </div>
 
             <div class="item">
-                <img src="images/Artboard 4.png" alt="">
+                <img src="images/Artboard 4.webp" alt="">
 
                 <div class="content">
                     <div class="title">MAGIC SLIDER</div>
@@ -104,16 +106,16 @@
         <div class="thumbnail">
 
             <div class="item">
-                <img src="images/Artboard 1.png" alt="">
+                <img src="images/Artboard-1.webp" alt="">
             </div>
             <div class="item">
-                <img src="images/Artboard 3.png" alt="">
+                <img src="images/Artboard 3.webp" alt="">
             </div>
             <div class="item">
-                <img src="images/Artboard 2.png" alt="">
+                <img src="images/Artboard 2.webp" alt="">
             </div>
             <div class="item">
-                <img src="images/Artboard 4.png" alt="">
+                <img src="images/Artboard 4.webp" alt="">
             </div>
 
         </div>
@@ -127,7 +129,7 @@
 
     </div>
    <!-- about us -->
-    <div class="container1">
+    <div class="container1" id="about">
         <div class="content-area">
             <h5>ABOUT US</h5>
             <h1>أفضل المصممين</h1>
@@ -141,55 +143,68 @@
     
         <div class="image-area">
           
-                 <img src="images/hero-slide-1.jpg" alt="Interior Image">
-           
+            <video width="600" autoplay muted playsinline controls loop>
+                <source src="images/platinum.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <script>
+                // Optional: Check for errors in loading the video
+                document.querySelector('video').addEventListener('error', function(event) {
+                    console.log('Error loading video:', event);
+                    alert('There was an error loading the video.');
+                });
+            </script>           
         </div>
     </div>
     <!-- service -->
-  <div class="container">
+  <div class="container" id="service">
     <h1>خدماتنا</h1>
     <div class="slider" data-slider>
       <ul class="slider__track" data-slider-track>
         <li>
           <div class="slide">
-            <img src="images/1.png" alt="service">
+            <img src="images/1.webp" alt="service">
           </div>
+          <h3>انترنت مجاني</h3>
+
         </li>
         <li>
           <div class="slide">
-            <img src="images/2.png" alt="">
-
+            <img src="images/2.webp" alt="">
           </div>
+          <h3>خدمات تنظيف</h3>
+
         </li>
         <li>
           <div class="slide">
-            <img src="images/3.png" alt="">
-
+            <img src="images/3.webp" alt="">
           </div>
+          <h3>صالة رياضة</h3>
+
         </li>
         <li>
           <div class="slide">
-            <img src="images/4.png" alt="">
-
+            <img src="images/4.webp" alt="">
           </div>
+          <h3>طاولة بلياردو</h3>
         </li>
         <li>
           <div class="slide">
-            <img src="images/5.png" alt="">
-
+            <img src="images/5.webp" alt="">
           </div>
+          <h3>مكتب أعمال</h3>
         </li>
         <li>
           <div class="slide">
-            <img src="images/6.png" alt="">
-
+            <img src="images/6.webp" alt="">
           </div>
+          <h3>موقف سيارات</h3>
         </li>
         <li>
           <div class="slide">
-            <img src="images/7.png" alt="">
-
+            <img src="images/7.webp" alt="">
           </div>
+          <h3>افطار صباحي مجاني</h3>
         </li>
       </ul>
       <div class="slider__buttons">
@@ -203,9 +218,9 @@
     </div>
   </div>  
     <!-- more about  -->
- <div class="container2">
+ <div class="container2" id="rest">
     <div class="image-section">
-        <img src="images/rest.png" alt="People in office">
+        <img src="images/rest.webp" alt="People in office">
     </div>
     <div class="text-section">
         <h1>علاج فانكوفر لأكثر من 30 عامًا</h1>
@@ -216,7 +231,7 @@
         <button>تعرف على المزيد</button>
     </div>
 </div>
-<div class="container2">
+<div class="container2" id="coffe">
   
     <div class="text-section">
         <h1>علاج فانكوفر لأكثر من 30 عامًا</h1>
@@ -227,11 +242,11 @@
         <button>تعرف على المزيد</button>
     </div>
     <div class="image-section">
-        <img src="images/coffe.png" alt="People in office">
+        <img src="images/coffe.webp" alt="People in office">
     </div>
 </div>
     <!-- feedback -->
-<main class="feedbac">
+<main class="feedbac" id="review">
     <h1>اراء عملائنا </h1>
     <section class="feedback">
         <div class="slide-container swiper">
@@ -362,20 +377,26 @@
           </div>
     </section>
 </main>
+<!-- map -->
+
+<iframe
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3487.936013127877!2d39.657461000000005!3d24.463003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15bdb9555555554f%3A0x57bcc2e1f5b77710!2sY%20platinum!5e0!3m2!1sen!2seg!4v1693512303529!5m2!1sen!2seg" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
 
 <!-- footer -->
-<footer class="footer">
+<footer class="footer" >
     <h1 class="footer-title">مطور </h1>
     <p class="footer-description">
         مطور أحمق هو موقع ويب للمدونات حيث ستجد دروسًا رائعة في تصميم الويب والتطوير. هنا يتم وصف كل درس بشكل جميل خطوة بخطوة
         مع الكود المصدري المطلوب.
     </p>
     <div class="social-icons">
-        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
-        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="social-icon"><i class="fab fa-google-plus-g"></i></a>
-        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
-        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.facebook.com/people/Platinum-y-hotel/61564578099366/" class="social-icon"><i class="fab fa-facebook"></i></a>
+        <a href="https://x.com/platnum_y_hotel/with_replies?mx=2" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.tiktok.com/@platnum_y_hotel" class="social-icon"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.youtube.com/channel/UCdJD0W_p3RMuvU4hXHovpyg/community?pvf=CAI%253D" class="social-icon"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.linkedin.com/in/%D8%A8%D9%84%D8%A7%D8%AA%D9%8A%D9%86%D9%8A%D9%88%D9%85-%D8%A7%D9%84%D9%81%D9%86%D8%AF%D9%82%D9%8A%D8%A9-0bba07277/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
     </div>
 </footer>
 
